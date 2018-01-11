@@ -27,7 +27,7 @@ function makeGrid() {
     };
 
     $('td').on('click', function () {
-        //       assigning color to the value of colorPicker
+    //  assigning color to the value of colorPicker
         color = $('#colorPicker').val();
         $(this).attr("bgcolor", color);
     });
