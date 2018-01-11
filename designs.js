@@ -7,9 +7,8 @@
 // // // Your code goes here!
 // // }
 
-
 //pixel art project function
-function makeGrid() {
+$(document).ready(function makeGrid() {
     //   creating rows, columns by selecting the value of input_height,width using Jquary
     let rows = $('#input_height').val();
     let columns = $('#input_width').val();
@@ -31,7 +30,7 @@ function makeGrid() {
         color = $('#colorPicker').val();
         $(this).attr("bgcolor", color);
     });
-}
+})
 
 //selecting submit id and add click method. When it's clicked the function is fired
 $('#submit').click(function (event) {
